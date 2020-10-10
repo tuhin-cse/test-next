@@ -1,17 +1,19 @@
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function Layout(...props) {
     return (
-        <body>
+        <div className="main">
 
-            <div className="main">
-                <Navbar/>
-                {props.children}
-            </div>
+            <Navbar/>
 
 
-        </body>
+            {props.children}
 
+
+            <Footer/>
+
+        </div>
     )
 }
 
