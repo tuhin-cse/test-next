@@ -1,8 +1,17 @@
+import Navbar from "./Navbar";
+
 function Layout(...props) {
     return (
-        <div>
-            {props.children}
-        </div>
+        <body>
+
+            <div className="main">
+                <Navbar/>
+                {props.children}
+            </div>
+
+
+        </body>
+
     )
 }
 
