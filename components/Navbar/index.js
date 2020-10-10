@@ -1,10 +1,16 @@
+import Link from "next/link";
+
 function Navbar() {
     return (
         <header className="menu-section-area">
             <nav className="navbar navbar-expand-lg d-none d-sm-none d-md-block d-lg-block d-xl-block" id="mainNav">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"
-                                                                       className="img-fluid"/></a>
+                    <Link href="/">
+                        <a className="navbar-brand" >
+                            <img src="assets/img/logo.png" alt="logo" className="img-fluid"/>
+                        </a>
+                    </Link>
+
                     <button className="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
                             data-target="#navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                         <i className="fas fa-bars"></i>
@@ -33,10 +39,14 @@ function Navbar() {
                                 <a className="nav-link" href="#!">ড্রাইভার হিসাবে সাইনআপ</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#!">গ্রাহক হিসাবে সাইনআপ</a>
+                                <Link href="/signup">
+                                    <a className="nav-link">গ্রাহক হিসাবে সাইনআপ</a>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="login.html">লগইন</a>
+                                <Link href="/login">
+                                    <a className="nav-link">লগইন</a>
+                                </Link>
                             </li>
                             <li className="nav-item dropdown-box">
                                 <a className="nav-link dropdown-toggle" data-toggle="dropdown"><i
@@ -75,10 +85,14 @@ function Navbar() {
                         <a className="nav-link" href="#!">ড্রাইভার হিসাবে সাইনআপ</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#!">গ্রাহক হিসাবে সাইনআপ</a>
+                        <Link href="/signup">
+                            <a className="nav-link">গ্রাহক হিসাবে সাইনআপ</a>
+                        </Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="login.html">লগইন</a>
+                        <Link href="/login">
+                            <a className="nav-link">লগইন</a>
+                        </Link>
                     </li>
                     <li className="dropdown">
                         <a title="বাংলা"><i className="fas fa-globe"></i> বাংলা</a>
